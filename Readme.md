@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Danylo Voloshyn](https://up.htmlacademy.ru/htmlcss/34/user/2101121).
-* Наставник: `Неизвестно`.
+* Наставник: [Артём Картавый](https://htmlacademy.ru/profile/artem_k).
 
 ---
 
