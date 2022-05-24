@@ -2,6 +2,7 @@
 <html lang="ru">
 
 <head>
+    <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
 </head>
 
@@ -70,10 +71,7 @@
                         </li>
                     </ul>
                 </fieldset>
-                <button class="button" type="submit">Применить</button>
-                <button class="button-reset" type="submit">Сбросить</button>
-            </form>
-            <h2 class="quantity-hotel">Найдено гостиниц: 38</h2>
+                
             <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Тип жилья:</legend>
                 <ul class="catalog-filter-list">
@@ -93,11 +91,15 @@
                         </label>
                     </li>
                 </ul>
+            </fieldset>
+                <button class="button" type="submit">Применить</button>
+                <button class="button-reset" type="reset">Сбросить</button>
+            </form>
+            <h3 class="quantity-hotel">Найдено гостиниц: 38</h3>
                 <a href="#" class="button button-line"><span class="visually-hidden">список в линию</span></a>
                 <a href="#" class="button button-string"><span class="visually-hidden">список в строку</span></a>
                 <a href="#" class="button button-block"><span class="visually-hidden">список в блок</span></a>
-            </fieldset>
-            <select class="selection-control" arial-label="Сортировка">
+            <select class="selection-control" aria-label="Сортировка">
                 <option value="popular">Сначала популярное</option>
                 <option value="cheap">Сначала дешёвое</option>
                 <option value="expensive">Сначала дорогое</option>
@@ -173,7 +175,7 @@
                 </li>
             </ul>
             <label class="quantity-hotel-in-page"> Гостиниц на странице:
-                <input type="numer" value="4">
+                <input type="text" value="4">
             </label>
         </section>
     </main>
@@ -182,7 +184,7 @@
             <h2 class="page-fotter-tytle">Подпишитесь на рассылку</h2>
             <p> Только полезная информация и никакого спама, честное бойскаутское! </p>
             <form class="newslatter-form" action="http://echo.htmlacademy.ru/" method="post">
-                <label class="email" class="visually-hidden">
+                <label class="email visually-hidden">
                     <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" required>
                 </label>
                 <button class="button newsletter-button" type="submit">
@@ -206,8 +208,8 @@
         </ul>
         <a class="phone-infoline" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <p class="about-image>">
-            <a href="https://htmlacademy.ru" target="_blanks">
-                <img class="htmlacademy-link" src="#" alt=".html academy"></img></a>
+            <a href="https://htmlacademy.ru" target="_blank">
+                <img class="htmlacademy-link" src="#" alt=".html academy"></a>
         </p>
 
     </footer>
