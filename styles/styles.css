@@ -1,0 +1,129 @@
+@font-face{
+  font-family: "PT Sans";
+  font-style: normal;
+  font-size: 400;
+  src: url("/fonts/ptsans-700.woff2") format("woff2") ;
+  font-display: swap;
+}
+
+@font-face{
+  font-family: "PT Sans";
+  font-style: normal;
+  font-size: 700;
+  src: url("/fonts/ptsans-700.woff2") format("woff2") ;
+  font-display: swap;
+}
+
+body{
+  font-family:"PT Sans", sans-serif;
+  font-size:18px ;
+  line-height:21px ;
+  color:#333333 ;
+  background-color: #fbf7f4;
+}
+a.broun{
+  background: #756157;
+  border-radius: 4px;
+  color:white;
+}
+.button{
+  border-radius: 4px;
+  background: #82B3D3;
+  border-radius: 0px 10px 10px 0px;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+}
+.page-header{
+  color: #000000;
+  background-color: white ;
+}
+.navigation-link{
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #000000;
+  font-style: normal;
+  font-weight: 700;
+  text-decoration:none;
+}
+.main-index{
+  background-image:url("/images/index-background.jpg") ;
+  background-size:100%;
+  background-repeat: no-repeat;
+  background-color: #fbf7f4;
+}
+.advantages-logo{
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.box{
+  Width:400px;
+  Height:384px;
+  text-align: center;
+  background: rgba(131, 179, 211, 0.12) center top;
+  background-repeat: no-repeat;
+}
+.box.blue{
+  background-color:#82B3D3;
+  color: #ffffff;
+}
+.box.white{
+  background-color:#ffffff;
+}
+.box h3,.box span {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.icon-house{
+  background-image: url("/images/Vector_house.svg");
+}
+.icon-present{
+  background-image: url("/images/present.svg");
+}
+.box.white.food{
+  background-image: url("/images/food.svg");
+}
+.box p{
+  display: inline-block;
+  line-height: normal;
+  vertical-align: middle;
+}
+
+
+.register-tour{
+  text-align: center;
+}
+.register-tour-title{
+  text-transform: uppercase;
+
+}
+.page-footer{
+  text-align: center;
+  color: white;
+  background-image: url("/images/background.jpg");
+  background-size:100% ;
+}
+.footer-social-item{
+  text-align: left;
+
+}
+.about-image{
+  text-align: right;
+
+}
+
+.phone-infoline{
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+}
