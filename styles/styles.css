@@ -14,28 +14,64 @@
   font-display: swap;
 }
 
+html{
 
+
+}
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  background-color: #fbf7f4;
+  background-color: #ffffff;
   font-weight: 400;
-  width: 1300px;
+  width: 1200px;
+  margin: 0;
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
 
+}
+ul{
+  list-style-type: none;
+  margin:0;
+  padding: 0;
+}
+ul.navigation-list{
+  display: inline-flex;
+  position: absolute;
+  top: 20px ;
+  left: 256px ;
+}
+ul.navigation-user{
+  display: inline-flex;
+  position: absolute;
+  right: 85px ;
+  transform: translatex(-50%);
+  top:24px;
+}
+li.navigation-item{
+
+  padding-right: 30px;
 }
 
 a.broun {
   background: #756157;
   border-radius: 4px;
   color: white;
+  position: absolute;
+  width:160px;
+  height:37px;
+  text-align: center;
+  top:-10px;
+
 }
 
 .button {
   border-radius: 4px;
   background: #82B3D3;
-  border-radius: 0px 10px 10px 0px;
+  border-radius: 0 10px 10px 0;
   text-align: center;
   color: #000000;
   text-decoration: none;
@@ -43,11 +79,18 @@ a.broun {
 }
 
 /* header */
+header{
+  height: 65px;
+}
 .page-header {
   color: #000000;
   background-color: white;
 }
-
+.header-icon-image{
+  position: absolute;
+  display: block;
+  left: 70px;
+}
 .navigation-link {
   font-size: 20px;
   line-height: 26px;
@@ -71,14 +114,19 @@ a.broun {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  display: inline-block;
-  margin: 0px;
+  display:block;
+  margin: 0;
   padding: 145px 290px 31px;
   text-align: center;
 }
 
 /* center box */
+.logo{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 
+}
 
 p.five-why {
   font-size: 22px;
@@ -109,7 +157,7 @@ p.five-why {
   background-repeat: no-repeat;
   position: relative;
   box-sizing: border-box;
-  padding: 103px 85px 0px 85px;
+  padding: 90px 85px 30px 85px;
 }
 
 .box.blue {
@@ -120,10 +168,11 @@ p.five-why {
 .box-icon.white {
   background-color: #ffffff;
 }
-
+.box .advantages-title{
+  padding-top: 13px;
+}
 .box .advantages-title-special {
   color: #ffffff;
-  padding-top: -11px;
   margin: 0;
 }
 
@@ -192,7 +241,7 @@ span.number {
   text-align: center;
   position: relative;
   background-color: ffffff;
-  border: 0px;
+  border: 0;
   height: 417px;
   box-sizing: border-box;
   padding-top: 91px;
@@ -206,6 +255,7 @@ span.number {
   font-size: 30px;
   line-height: 36px;
   color: #000000;
+  display: block;
 
 }
 
@@ -214,27 +264,31 @@ span.number {
   font-size: 22px;
   line-height: 26px;
   padding-top: 29px;
-  margin: 0px;
+  margin: 0;
+  padding-bottom: 36px ;
 }
 
 
 /* footer */
-.page-footer {
+.newsletter {
   text-align: center;
   color: white;
   background-image: url("../images/background.jpg") ;
   background-size: 100%;
   background-repeat: no-repeat;
+  width: 1200px;
+  height: 411px;
+
 }
+
 .page-footer-tytle{
+  display: block;
   font-size: 30px;
   line-height: 36px;
-  display: inline-block;
-  padding:94px 398px 29px;
   text-transform: uppercase;
+  height: 94px;
 }
 .newsletter p{
-  display: inline-block;
   font-size: 22px;
   line-height: 26px;
 }
@@ -242,8 +296,8 @@ span.number {
 .email input{
   width:600px;
   height:60px;
-  border-radius: 10px 0px 0px 10px;
-  padding: 0px 0px 0px 20px;
+  border-radius: 10px 0 0 10px;
+  padding: 0 0 0 20px;
   border: 0;
 }
 
@@ -256,11 +310,29 @@ span.number {
 
 .footer-social-item {
   text-align: left;
-
+  position: ;
 }
 
 .about-image {
   text-align: right;
+}
+
+.register-tour-button{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  background: #756157;
+  height:60px; ;
+  border-radius: 4px;
+  width:574px;
+  height:60px;
+  display: inline-block;
+  text-align: center;
+  color: #ffffff;
+}
+.register-tour-button-info{
+  padding: 15px 10px 15px 10px;
+  display: inline-block;
 }
 
 .phone-infoline {
@@ -282,4 +354,15 @@ span.star {
   background-image: url("../images/star.svg");
   width: 18px;
   height: 17px;
+}
+
+
+.visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
