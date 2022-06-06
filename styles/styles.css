@@ -14,9 +14,10 @@
   font-display: swap;
 }
 
-html{
+html {
   height: 100%;
 }
+
 body {
   display: flex;
   flex-direction: column;
@@ -26,15 +27,16 @@ body {
   color: #333333;
   background-color: #F2F2F2;
   font-weight: 400;
-  max-width: 1280px;
-  margin:0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
   font-style: normal;
   min-height: 100%;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
-ul{
+
+ul {
   list-style-type: none;
-  margin:0;
+  margin: 0;
   padding: 0;
 }
 
@@ -53,35 +55,41 @@ a.broun {
 .button {
   border-radius: 4px;
   background: #82B3D3;
-  border-radius: 0 10px 10px 0;
-  text-align: center;
   color: #000000;
   text-decoration: none;
-  padding: 0;
 }
 
 /* header */
 .page-header {
   color: #000000;
   background-color: white;
-}
-.navigation{
-  display: flex;
-  align-items: center ;
 
 }
-ul.navigation-list{
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+ul.navigation-list {
+  margin-left: 30px;
   display: flex;
 }
-ul.navigation-user{
+
+ul.navigation-user {
+  width: 300px;
   display: flex;
+  margin-left: auto;
 }
-li.navigation-item{
+
+li.navigation-item {
   padding-right: 30px;
 }
-.header-icon-image{
+
+.header-icon-image {
   margin-left: 70px;
 }
+
 .navigation-link {
   font-size: 20px;
   line-height: 26px;
@@ -95,7 +103,7 @@ li.navigation-item{
 
 .main-index {
   background-image: url("../images/index-background.jpg");
-  background-size: 100%;
+  max-width: 1200px;
   background-repeat: no-repeat;
   background-color: #fbf7f4;
 }
@@ -111,15 +119,16 @@ li.navigation-item{
 }
 
 /* center box */
-.main-column{
+.main-column {
   flex-grow: 1;
 }
-.logo{
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
 
+.logo {
+  display: block;
+  margin: 0 auto;
+  margin-top: 46px;
 }
+
 p.five-why {
   font-size: 22px;
   line-height: 26px;
@@ -128,6 +137,7 @@ p.five-why {
   margin: 0;
   text-align: center;
 }
+
 .box-icon {
   Width: 400px;
   height: 384px;
@@ -139,7 +149,7 @@ p.five-why {
   padding-top: 182px;
 }
 
-.box {
+.box,.box-blue {
   width: 400px;
   height: 384px;
   text-align: center;
@@ -149,7 +159,7 @@ p.five-why {
   padding: 90px 85px 30px 85px;
 }
 
-.box.blue {
+.box-blue {
   background-color: #82B3D3;
   color: #ffffff;
 }
@@ -157,10 +167,12 @@ p.five-why {
 .box-icon.white {
   background-color: #ffffff;
 }
-.box .advantages-title{
+
+.box .advantages-title {
   padding-top: 13px;
 }
-.box .advantages-title-special {
+
+.box-blue .advantages-title-special {
   color: #ffffff;
   margin: 0;
 }
@@ -210,6 +222,12 @@ span.number {
   left: 50%;
   transform: translateX(-50%);
 }
+.box-icon:not(:nth-child(2)),.box{
+  background-color:rgba(131, 179, 211, 0.12);
+}
+.group-flex .advantages-item:nth-child(2){
+  background: rgba(131, 179, 211, 0.2);
+}
 
 .food:before {
   content: '';
@@ -244,7 +262,8 @@ span.number {
   font-size: 30px;
   line-height: 36px;
   color: #000000;
-  display: block;
+  padding-bottom: 29px;
+  margin: 0;
 
 }
 
@@ -252,9 +271,8 @@ span.number {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  padding-top: 29px;
-  margin: 0;
-  padding-bottom: 36px ;
+  margin: 0 auto;
+  padding-bottom: 56px;
 }
 
 
@@ -263,7 +281,7 @@ span.number {
 .newsletter {
   text-align: center;
   color: white;
-  background-image: url("../images/background.jpg") ;
+  background-image: url("../images/background.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   width: 1200px;
@@ -271,66 +289,67 @@ span.number {
 
 }
 
-.page-footer-tytle{
-  display: block;
+.page-footer-tytle {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  height: 94px;
+  margin: 94px auto 29px;
 }
-.newsletter p{
+
+.newsletter p {
   font-size: 22px;
   line-height: 26px;
+  margin: 0 auto 46px;
+  width: 475px;
 }
 
-.email input{
-  width:600px;
-  height:60px;
-  border-radius: 10px 0 0 10px;
-  padding: 0 0 0 20px;
-  border: 0;
+.newsletter-button {
+  padding: 12px 15px;
 }
 
-.newsletter-button{
-  width:200px;
-  height:60px;
-  margin:0;
-  border:0;
+.button-name {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 36px;
+  padding: 12px 15px;
+  border-radius: 0 10px 10px 0;
 }
 
-.footer-block{
-  border: 1px solid;
+.page-footer-container {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.footer-social-list {
   display: flex;
   justify-content: space-between;
+  margin-left: 70px;
+  padding-bottom: 35px;
+  width: 142px;
 }
-.footer-social-list{
-  display: flex;
-  justify-content: space-between;
-  margin-left:70px ;
-  height: 40px;
-  padding-top: 40px;
-  padding-bottom: 35px ;
-}
-p.about-image {
+
+.about-image {
   text-align: right;
-  margin:0 70px 0 0  ;
+  margin: 0 70px 0 0;
   height: 34px;
-  padding-top: 30px;
-  padding-bottom: 35px ;
+  width: 115px;
+  margin-left: auto;
 }
 
 .phone-infoline {
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
-  text-align: center;
   color: #000000;
   text-decoration: none;
-  height: 40px;
-  padding-top: 30px;
-  padding-bottom: 35px ;
+  text-align: center;
+  width: 720px;
+
 }
-.register-tour-button{
+
+.register-tour-button {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -340,7 +359,6 @@ p.about-image {
   padding: 12px 200px;
   text-transform: uppercase;
 }
-
 
 .group-flex {
   display: flex;
@@ -354,54 +372,75 @@ span.star {
   width: 18px;
   height: 17px;
 }
-.rating-list{
-  display:flex;
+
+.rating-list {
+  display: flex;
   padding-left: 20px;
   padding-right: 20px;
 }
-.rating{
-  margin-left:auto;
+
+.rating {
+  margin-left: auto;
 }
-.product-list{
+
+.catalog-products {
+  display: flex;
+
+}
+
+.catalog-filter-group {
+  width: 150px;
+  margin-left: 70px;
+  display: inline-block;
+}
+
+.product-list {
   display: flex;
   width: 1200px;
   flex-wrap: wrap;
   justify-content: center;
 }
-.product-card{
+
+.product-card {
   background-color: #ffffff;
-  width:340px;
-  height:438px;
+  width: 340px;
+  height: 438px;
   text-align: center;
   margin-right: 9px;
 }
-.product-card:nth-child(3){
-  margin:0;
-}
-.product-card-image{
-  padding-top: 20px ;
+
+.product-card:nth-child(3) {
+  margin: 0;
 }
 
-.button-gallery{
+.product-card-image {
+  padding-top: 20px;
+}
+
+.button-gallery {
   border-radius: 4px;
   color: #ffffff;
-  padding:9px 15px 8px 15px;
+  padding: 9px 15px 8px 15px;
   margin-left: 20px;
   margin-right: 20px;
 
 }
-.button-bue{
+
+.button-bue {
   background: #756157;
   margin-right: auto;
 }
-.button-favourite{
+
+.button-favourite {
   background: #82B3D3;
 }
-.footer-gallery{
+
+.footer-gallery {
   display: flex;
   justify-content: space-between;
 }
-.pagination{
+
+.pagination {
   display: flex;
 }
 
