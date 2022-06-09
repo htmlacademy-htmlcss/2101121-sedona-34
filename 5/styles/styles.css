@@ -72,7 +72,7 @@ a.broun {
 }
 
 ul.navigation-list {
-  margin-left: 30px;
+  margin-left: 47px;
   display: flex;
 }
 
@@ -80,14 +80,7 @@ ul.navigation-user {
   width: 300px;
   display: flex;
   margin-left: auto;
-}
-
-li.navigation-item {
-  padding-right: 30px;
-}
-
-.header-icon-image {
-  margin-left: 70px;
+  justify-content: flex-end;
 }
 
 .navigation-link {
@@ -99,15 +92,20 @@ li.navigation-item {
   font-style: normal;
   font-weight: 700;
   text-decoration: none;
+  padding-right: 30px;
 }
 
 .main-index {
-  background-image: url("../images/index-background.jpg");
+  background-image: url("/index-background.jpg");
   max-width: 1200px;
   background-repeat: no-repeat;
-  background-color: #fbf7f4;
+  background-color: #ffffff;
 }
-
+.background-bottom{
+  background-image: url("/bacground_bottom.svg");
+  background-repeat: no-repeat;
+  background-color:  #000000;
+}
 .advantages-logo {
   text-transform: uppercase;
   font-weight: 700;
@@ -186,14 +184,15 @@ p.five-why {
   text-transform: uppercase;
   color: #000000;
   margin: 0;
+  padding-bottom: 30px;
 }
 
 span.number {
   display: inline-block;
-  padding: 30px;
+  padding-bottom: 30px;
 }
 
-.box p {
+.box p ,.box-blue p,.box-icon p{
   margin: 0;
 }
 
@@ -273,6 +272,7 @@ span.number {
   line-height: 26px;
   margin: 0 auto;
   padding-bottom: 56px;
+  max-width: 530px;
 }
 
 
@@ -282,18 +282,20 @@ span.number {
   text-align: center;
   color: white;
   background-image: url("../images/background.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   width: 1200px;
-  height: 411px;
-
+  min-height: 411px;
+  padding-top: 94px;
+  box-sizing: border-box;
 }
 
 .page-footer-tytle {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 94px auto 29px;
+  margin:0;
+  margin-bottom:29px ;
 }
 
 .newsletter p {
@@ -315,54 +317,47 @@ span.number {
   padding: 12px 15px;
   border-radius: 0 10px 10px 0;
 }
-
-.page-footer-container {
-  display: flex;
-  flex-wrap: wrap;
-
-}
-
 .footer-social-list {
   display: flex;
   justify-content: space-between;
-  margin-left: 70px;
-  padding-bottom: 35px;
-  width: 142px;
+  gap:26px;
 }
-
-.about-image {
-  text-align: right;
-  margin: 0 70px 0 0;
-  height: 34px;
-  width: 115px;
-  margin-left: auto;
-}
-
 .phone-infoline {
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
   color: #000000;
   text-decoration: none;
-  text-align: center;
-  width: 720px;
-
 }
 
 .register-tour-button {
-  font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   background: #756157;
   border-radius: 4px;
   color: #ffffff;
-  padding: 12px 200px;
+  padding: 12px 15px;
   text-transform: uppercase;
+  min-width: 574px;
+  display: inline-block;
+  margin-bottom: 93px;
 }
-
+label.e-mail{
+  display: inline-block;
+}
+.e-mail input{
+  width:600px;
+  height:60px;
+  border-radius: 10px 0 0 10px;
+  padding: 0 0 0 20px;
+  border: 0;
+}
 .group-flex {
   display: flex;
   flex-wrap: wrap;
+}
+.about-image{
+  
 }
 
 /* style for catalog */
@@ -372,20 +367,21 @@ span.star {
   width: 18px;
   height: 17px;
 }
-
+.rating-word{
+  background: #F2F2F2;
+  border-radius: 4px;
+  padding: 9px 22px 8px 23px;
+  font-size: 16px;
+  line-height: 20px;
+}
 .rating-list {
   display: flex;
-  padding-left: 20px;
-  padding-right: 20px;
+  align-items: center;
 }
-
-.rating {
-  margin-left: auto;
-}
-
-.catalog-products {
-  display: flex;
-
+.quantity-hotel{
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 36px;
 }
 
 .catalog-filter-group {
@@ -396,43 +392,53 @@ span.star {
 
 .product-list {
   display: flex;
-  width: 1200px;
+  width: 1060px;
   flex-wrap: wrap;
-  justify-content: center;
+  column-gap: 18px;
+
 }
 
 .product-card {
   background-color: #ffffff;
   width: 340px;
   height: 438px;
-  text-align: center;
-  margin-right: 9px;
+  box-sizing: border-box;
+  padding: 20px;
 }
-
-.product-card:nth-child(3) {
-  margin: 0;
+.product-card-link{
+  text-decoration: none;
+  color: #000000;
 }
-
-.product-card-image {
-  padding-top: 20px;
+.product-card-title{
+  margin:0;
+  padding: 16px 0;
 }
+.card-info{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap:20px;
+  row-gap: 16px;
+}
+/* sort */
 
+/* sort-end */
 .button-gallery {
   border-radius: 4px;
   color: #ffffff;
   padding: 9px 15px 8px 15px;
-  margin-left: 20px;
-  margin-right: 20px;
-
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px
 }
 
 .button-bue {
   background: #756157;
-  margin-right: auto;
+
 }
 
 .button-favourite {
   background: #82B3D3;
+
 }
 
 .footer-gallery {
@@ -452,4 +458,20 @@ span.star {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+/* dodtek */
+.container{
+  padding: 0 70px;
+}
+.advantages-item:last-child{
+  padding-right: 0;
+}
+.footer-container{
+display: flex;
+box-sizing: border-box;
+width: 100%;
+justify-content: space-between;
+height:120px;
+padding-top: 45px;
+padding-bottom: 35px;
 }
