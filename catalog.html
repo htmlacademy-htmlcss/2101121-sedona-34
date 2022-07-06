@@ -52,7 +52,7 @@
         <ul class="breadcrumbs">
           <li class="breadcrums-item">
             <a class="breadcrums-link" href="index.html">
-              <svg width="13" height="13" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+              <svg class="breadcrums-icon" width="13" height="13" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M0.162109 6.1499L6.16211 0.649902L12.1621 6.1499V12.3499H0.162109V6.1499ZM1.16211 6.5499V11.3499H11.1621V6.5499L6.16211 2.0499L1.16211 6.5499ZM5.16211 10.3499H4.16211V6.84985H8.16211V10.3499H7.16211V7.84985H5.16211V10.3499Z" />
               </svg>
@@ -71,23 +71,23 @@
                 <legend class="catalog-filter-title">Инфраструктура:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
-                    <label class="control">
-                      <input class="control-input visually-hidden" type="checkbox" name="poll" checked>
-                      <span class="control-mark"></span>
-                      <span class="control-label">Бассейн</span>
+                    <label class="control" >
+                      <input class="control-input visually-hidden" type="checkbox" name="poll" checked tabindex="0">
+                      <span class="control-mark" tabindex="0"></span>
+                      <span class="control-label"  >Бассейн</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label class="control">
+                    <label class="control" >
                       <input class="control-input visually-hidden" type="checkbox" name="parking" checked>
-                      <span class="control-mark"></span>
+                      <span class="control-mark" tabindex="0"></span>
                       <span class="control-label">Парковка</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label class="control">
+                    <label class="control" >
                       <input class="control-input visually-hidden" type="checkbox" name="wi-fi">
-                      <span class="control-mark"></span>
+                      <span class="control-mark" tabindex="0"></span>
                       <span class="control-label">Wi-Fi</span>
                     </label>
                   </li>
@@ -99,21 +99,21 @@
                   <li class="catalog-filter-item">
                     <label class="control">
                       <input class="control-input visually-hidden" type="radio" name="product-group" value="Hotel" checked>
-                      <span class="control-mark"></span>
+                      <span class="control-mark" tabindex="0"></span>
                       <span class="control-label">Гостиница</span>
                     </label>
                   </li>
-                  <li class="catalog-filter-item">
-                    <label class="control">
+                  <li class="catalog-filter-item" >
+                    <label class="control" >
                       <input class="control-input visually-hidden" type="radio" name="product-group" value="Motel">
-                      <span class="control-mark"></span>
+                      <span class="control-mark" tabindex="0"></span>
                       <span class="control-label">Мотель</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label class="control">
+                    <label class="control" >
                       <input class="control-input visually-hidden" type="radio" name="product-group" value="Apartment">
-                      <span class="control-mark"></span>
+                      <span class="control-mark" tabindex="0"></span>
                       <span class="control-label">Апартаменты</span>
                     </label>
                   </li>
@@ -178,8 +178,8 @@
           </div>
           <div class="select sorting-type">
           <select class="selection-control" aria-label="Сортировка">
-            <option value="popular">Сначала популярное</option>
             <option value="cheap">Сначала дешёвое</option>
+            <option value="popular">Сначала популярное</option>
             <option value="expensive">Сначала дорогое</option>
           </select>
           </div>
