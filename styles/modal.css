@@ -1,0 +1,330 @@
+.modal-container{
+  position: fixed;
+  display:grid;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: rgba(242, 242, 242, 0.8);
+  z-index:2;
+}
+.modal-container-closed{
+  display: none;
+}
+.modal{
+  position: relative;
+  margin:auto;
+  padding: 70px;
+  background: #FFFFFF;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+}
+.modal-auth{
+  width:715px;
+  box-sizing: border-box;
+}
+.modal-close-button{
+  position: absolute;
+  padding: 0;
+  top:54px;
+  right:70px;
+  width:53px;
+  height:53px;
+  border:none;
+  border-radius:50%;
+  background-color: #F2F2F2;
+  background-image: url(../images/close.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-position: center;
+}
+
+.text-input{
+  border:0;
+  background: #F2F2F2;
+  border-radius: 4px;
+  width:420px;
+  padding: 5px 0 5px 19px;
+  font-size: 18px;
+  line-height: 40px;
+  grid-column: 2/4;
+  box-sizing: border-box;
+  color: #000000;
+  font-family: "PT sans",sans-serif;
+}
+.text-input::placeholder{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 40px;
+  color:inherit;
+  font: inherit;
+  opacity: 1;
+}
+.text-input:focus{
+  background-color: #e6e6e6;
+  outline: 3px solid #83B3D3 ;
+}
+.text-input:focus-visible{
+  background-color: #e6e6e6;
+  outline: 3px solid #83B3D3 ;
+}
+.text-input:active{
+  background-color: #FFFFFF;
+  box-shadow: inset 0 0 0 2px #000000;
+}
+.date-text{
+  color: #FF5757;
+  grid-column: 2/3;
+  margin: 0;
+  padding: 0;
+  align-self: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  margin-top: 8px;
+}
+.date-text.two{
+  color: #333333;
+}
+.auth-form{
+  display: flex;
+  flex-wrap:wrap ;
+}
+.number-of-people ,
+.number-of-children{
+  border:0;
+  width:133px;
+  background: #F2F2F2;
+  border-radius: 4px;
+  padding: 15px auto 14px auto;
+  margin-bottom: 40px;
+  font-size: 18px;
+  line-height: 21px;
+  color:black;
+
+}
+.modal-button{
+  width:575px;
+  font-size: 20px;
+  line-height: 36px;
+  padding:12px 26px;
+
+}
+.modal-field{
+  display: flex;
+}
+.field-box{
+  display: grid;
+  order:2;
+  grid-template-columns: 50px 33px 50px;
+  margin-left:auto;
+  align-items: center;
+}
+.field-label{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  margin: 0;
+  padding: 10px 0;
+  color: #000000;
+
+}
+.field-number{
+  box-sizing: border-box;
+  grid-area:  1 / 1 / 2 / 4;
+  appearance: textfield;
+  width: 133px;
+  padding: 5px 50px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height:  21px;
+  text-align: center;
+  border-radius: 4px;
+  border: 0;
+  background-color: #F2F2F2;
+  min-height: 50px;
+  font-family: "PT sans",sans-serif;
+}
+.field-number::placeholder{
+  font: inherit;
+  color: inherit;
+  opacity: 1;
+}
+.field-number:hover{
+  background-color: #e6e6e6;
+}
+.field-number:focus{
+  background-color: #e6e6e6;
+  outline:3px solid #83B3D3;
+}
+.field-number:active{
+  background-color:#FFFFFF ;
+  box-shadow: inset 0 0 0 2px #000000;
+}
+.minus{
+  --icon: url(../images/minus.svg);
+  grid-area: 1 / 1 / 2 / 2;
+}
+.plus{
+  --icon: url(../images/plus.svg);
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+.modal-title{
+margin:0;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-transform: uppercase;
+color: #000000;
+margin-bottom: 63px;
+margin-top:-8px;
+margin-left:-2px;
+}
+.field-button{
+  z-index: 1;
+  display: flex;
+  place-items: center;
+  place-self: center;
+  margin:0;
+  padding: 0;
+  border:0;
+  border-radius: 1px;
+  background: transparent;
+  opacity: 0.3;
+}
+.field-button::before{
+  content:"";
+  width: 20px;
+  height:20px;
+  background: var(--icon) no-repeat center/ contain;
+}
+.field-button:hover{
+  opacity: 1;
+}
+.field-button:focus{
+  opacity: 1;
+  outline: 3px solid #83B3D3;
+}
+.field-button:active{
+  opacity: 0.2;
+}
+.field-number::-webkit-inner-spin-button,
+.field-number::-webkit-outer-spin-button{
+  display: none;
+}
+.date-button{
+  position: absolute;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  top:16px;
+  right:16px;
+  border-radius: 1px;
+  background: transparent;
+  opacity: 0.3;
+}
+.date-button:focus{
+  opacity: 1;
+  outline: 3px solid #83B3D3;
+}
+.date-button:focus-visible{
+  opacity: 1;
+  outline: 3px solid #83B3D3;
+}
+.date-button:hover{
+  opacity: 1;
+}
+.date-button:active{
+  opacity: 0.2;
+}
+.date-button::before{
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("..//images/date.svg") no-repeat center/contain;
+}
+.modal-stock{
+  display: grid;
+  position: relative;
+  grid-template-columns: 155px 367px 53px;
+  margin-bottom: 11px;
+  align-items: center;
+}
+.modal-stock-two{
+  display: grid;
+  grid-template-columns: 285px 230px;
+  gap:56px;
+  margin-bottom: 40px;
+  align-items: center;
+}
+.arrival-date,
+.departure-date{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  margin:0;
+  color:#000000;
+  padding: 5px 0;
+}
+
+.tooltip{
+  position: relative;
+  margin:14px 10px 11px;
+  padding: 5px;
+  border-radius: 50px;
+  background: #83B3D3;
+  cursor: help;
+}
+.tooltip:hover{
+  background: #68a2ca;
+}
+.tooltip-text{
+  position: absolute;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: none;
+  padding:20px 22px 23px;
+  border-radius: 10px;
+  display:block;
+  width:256px;
+  top: calc(100%-15px);
+  background-color: #242424;
+  color: #ffffff;
+  left:50%;
+  transform: translate(-50%);
+  z-index: 1;
+  visibility: hidden;
+  opacity: 1;
+  transition: visibility 0.3s, opacity 0.3s ;
+}
+.tooltip:after{
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left:0;
+  right:0;
+  top:-15px;
+  background: url(../images/info.svg) center / 19px 9px;
+}
+.tooltip::before{
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: url(../images/info.svg) no-repeat center / contain;
+}
+.find{
+  display: block;
+  width: 100%;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 12px 0 12px 0;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  text-align: center;
+}
