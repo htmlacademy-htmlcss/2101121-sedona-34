@@ -739,11 +739,8 @@ span.star {
 
 .sort-icon {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-22%, -17%);
-  width: 100%;
-  height: 100%;
+  padding: 35%;
+  right: -2px;
 }
 
 .sort-button:not(:first-child) {
