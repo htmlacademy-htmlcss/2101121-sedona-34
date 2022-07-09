@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="stylesheet" href="./styles/modal.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
   </head>
 
   <body>
@@ -74,16 +74,19 @@
                 <div class="group-flex">
                   <div class="box-icon house">
                     <h3 class="advantages-title"> Жильё</h3>
-                    <p class="advantages-description"> Рекомендуем пожить в&nbsp;настоящем мотеле,<br> всё как в кино! </p>
+                    <p class="advantages-description"> Рекомендуем пожить в&nbsp;настоящем мотеле,<br> всё как в кино!
+                    </p>
                   </div>
                   <div class="box-icon white food">
                     <h3 class="advantages-title">Еда</h3>
-                    <p class="advantages-description">Всегда заказывайте топовый&nbsp;фирменный бургер, вы не разочаруетесь!
+                    <p class="advantages-description">Всегда заказывайте топовый&nbsp;фирменный бургер, вы не
+                      разочаруетесь!
                     </p>
                   </div>
                   <div class="box-icon present">
                     <h3 class="advantages-title">Сувениры</h3>
-                    <p class="advantages-description">Не только китайского, но&nbsp;и&nbsp;настоящего местного производства! </p>
+                    <p class="advantages-description">Не только китайского, но&nbsp;и&nbsp;настоящего местного
+                      производства! </p>
                   </div>
                 </div>
               </div>
@@ -125,12 +128,9 @@
           </ul>
         </section>
         <section class="register-tour">
-          <h2 class="visually-hidden"> Регистрация на тур </h2>
           <h2 class="register-tour-title">Заинтересовались? </h2>
           <p> Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a href="#" class="register-tour-button button-brown"><span class="register-tour-button-info">Поиск гостиницы
-              в
-              седоне</span></a>
+          <a href="#" class="register-tour-button button-brown"><span class="register-tour-button-info">Поиск гостиницы в седоне</span></a>
         </section>
       </div>
     </main>
@@ -223,26 +223,26 @@
             </div>
             <div class="modal-field">
               <label class="field-label" for="children">Дети:</label>
-              <span class="field-box">
-                <button class="field-button minus" type="button">
-                  <span class="visually-hidden">минус</span>
-                </button>
-                <input class="field-number" id="children" type="number" name="children" value="1" max="99" >
-                <button class="field-button plus" type="button">
-                  <span class="visually-hidden">плюс</span>
-                </button>
-              </span>
-              <span class="tooltip">
+              <span class="tooltip" tabindex="0">
                 <span class="tooltip-text" role="tooltip" id="tooltip-choildren">
                   Укажите количество детей, которые будут с вами,&nbsp;возраст которых от&nbsp;6 до 18 лет&nbsp;.Дети
                   до&nbsp;6&nbsp;лет размещаются бесплатно.
                 </span>
               </span>
+              <span class="field-box">
+                <button class="field-button minus" type="button">
+                  <span class="visually-hidden">минус</span>
+                </button>
+                <input class="field-number" id="children" type="number" name="children" value="1" max="99">
+                <button class="field-button plus" type="button">
+                  <span class="visually-hidden">плюс</span>
+                </button>
+              </span>
             </div>
           </div>
-              <button class="find button" type="submit"> Найти </button>
+          <button class="find button" type="submit"> Найти </button>
         </form>
-    </div>
+      </div>
     </div>
   </body>
 
