@@ -237,23 +237,28 @@ body {
   margin-top: -5px;
   background-color: #242424;
 }
-.header-icon-link{
+
+.header-icon-link {
   text-decoration: none;
   color: #81B3D3;
 }
-.header-icon-image:hover{
+
+.header-icon-image:hover {
   color: #48839b;
   outline: none;
 }
-.header-icon-image:active{
+
+.header-icon-image:active {
   color: #81B3D3;
   outline: none;
 }
+
 .header-icon-image:focus,
-.header-icon-image:focus-visible{
+.header-icon-image:focus-visible {
   color: #48839b;
   outline: 2px solid #81B3D3;
 }
+
 .inner-header-title {
   font-size: 60px;
   margin: 0 0 10px 0;
@@ -699,7 +704,6 @@ span.star {
 .htmlacademy-icon {
   display: block;
   margin: 14px 10px;
-  
 }
 
 .product-card {
@@ -874,7 +878,7 @@ span.star {
   padding-top: 35px;
   padding-bottom: 35px;
   align-items: flex-start;
-  padding-left:60px;
+  padding-left: 60px;
   padding-right: 60px;
 }
 
@@ -923,19 +927,22 @@ span.star {
   color: #68A2CA;
   outline: none;
 }
-.social-link:focus{
+
+.social-link:focus {
   color: #68A2CA;
   outline: 2px solid #81B3D3;
 }
+
 .social-link:active {
   color: rgba(104, 162, 202, 0.3);
   ;
 }
 
-.phone-infoline:focus{
+.phone-infoline:focus {
   outline: 2px solid #756157;
   color: #756157;
 }
+
 .phone-infoline:hover {
   color: #756157;
   outline: none;
@@ -950,8 +957,9 @@ span.star {
   color: #756157;
   outline: none;
 }
-.htmlacademy-link:focus{
-  color:#756157;
+
+.htmlacademy-link:focus {
+  color: #756157;
   outline: 1px solid #756157;
 }
 
