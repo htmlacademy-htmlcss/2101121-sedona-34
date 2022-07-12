@@ -1,15 +1,15 @@
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
-  font-size: 400;
-  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
 @font-face {
   font-family: "PT Sans";
-  font-style: bold;
-  font-size: 700;
+  font-style: normal;
+  font-weight:700;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
@@ -53,6 +53,7 @@ body {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+
 }
 
 
@@ -169,7 +170,7 @@ body {
   border: 0;
   font-size: 16px;
   line-height: 20px;
-  padding: 9px 15px 8px;
+  padding: 8px 15px 8px;
 
 }
 
@@ -304,8 +305,8 @@ body {
   line-height: 20px;
   font-weight: 400;
   font-family: "PT sans", sans-serif;
-  padding: 14px 15px 14px 15px;
-  margin-top: 9px;
+  padding: 14px 15px 15px 15px;
+  margin-top: 8px;
 }
 
 .breadcrums-icon {
@@ -565,7 +566,6 @@ span.number {
   line-height: 40px;
   color: #000000;
   text-decoration: none;
-  letter-spacing: -1px;
   max-width: 500px;
   padding: 10px;
   box-sizing: border-box;
@@ -627,6 +627,9 @@ span.number {
   margin: 0;
   padding-bottom: 30px;
 
+}
+.flex-box{
+  height: 100%;
 }
 
 /* style for catalog */
@@ -808,7 +811,7 @@ span.star {
 /* sort-end */
 
 .button-gallery {
-  padding: 10px 15px 8px 15px;
+  padding: 9px 15px 8px 15px;
   font-size: 16px;
   line-height: 20px
 }
@@ -1053,7 +1056,7 @@ span.star {
 
 .toggle-max {
   top: -8px;
-  right: -10px;
+  right: -8px;
 }
 
 .range-wrapper-inputs {
@@ -1126,6 +1129,9 @@ span.star {
   margin: 0;
   padding: 0;
   border: none;
+  margin-right: 73px;
+}
+.catalog-filter-group.slider{
   margin-right: 71px;
 }
 
